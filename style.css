@@ -1,0 +1,44 @@
+h1 {
+  font-size: 60px;
+}
+
+h5 {
+  text-transform: capitalize;
+}
+
+#linha-vertical {
+  border-right: 1px solid rgb(184, 179, 179);
+  bottom: 90px;
+  height: 250px;
+  position: absolute;
+  right: 130px;
+}
+
+.card {
+  border: 2px solid grey;
+}
+
+.card-title {
+  margin: 0;
+}
+
+.time {
+  font-size: 15px;
+}
+
+.precip {
+  font-size: 13px;
+}
+
+.days {
+  color: grey;
+  font-size: 10px;
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.current-temp {
+  display: inline;
+  font-size: 15px;
+  vertical-align: super;
+}
