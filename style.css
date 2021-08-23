@@ -6,6 +6,10 @@ h5 {
   text-transform: capitalize;
 }
 
+p {
+  margin: 15px;
+}
+
 #linha-vertical {
   border-right: 1px solid rgb(184, 179, 179);
   bottom: 90px;
