@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -21,83 +21,98 @@
         <div class="card-body">
           <div id="linha-vertical"></div>
           <h5 class="card-title" id="city">Porto Alegre</h5>
-             <small></small>
+          <small></small>
           <div class="clearfix">
-            <div style="float:right;">
-        <div class="row">
-            <div class="col days">
-        Friday ☁<br />
-        10°C - 12°C <br />
-        <br />
-        Saturday ☁<br />
-        8°C - 12°C <br />
-        <br />
-        Sunday ☁<br />
-        12°C - 14°C <br />
-        <br />
-        Monday 🌧<br />
-        10°C - 12°C <br />
-        <br />
-        Tuesday ☀<br />
-        12°C - 14°C<br />
-      </div>
-      </div>
-        </div>
-          <h1>19
-              <div class="current-temp" id="temperature">℃
-            </div></h1>
-          <br />
-          <div class="row">
-            <div class="col-8">
-              <div class="row time">
-                <div class="col-2">21</div>
-                <div class="col-2">22</div>
-                <div class="col-2">23</div>
-                <div class="col-2">00</div>
-                <div class="col-2">01</div>
-                <div class="col-2">02</div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-8">
-              <div class="row precip">
-                <div class="col-2">☁</div>
-                <div class="col-2">🌕</div>
-                <div class="col-2">🌕</div>
-                <div class="col-2">☁</div>
-                <div class="col-2">🌕</div>
-                <div class="col-2">🌕</div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-9">
-              <hr />
-            </div>
-          </div>
-          <form id="search-form">
-            <div class="row">
-              <div class="col-6">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Enter a city"
-                    id="search-text-input"
-                  /> 
+            <div style="float: right">
+              <div class="row">
+                <div class="col days">
+                  Friday ☁<br />
+                  10°C - 12°C <br />
+                  <br />
+                  Saturday ☁<br />
+                  8°C - 12°C <br />
+                  <br />
+                  Sunday ☁<br />
+                  12°C - 14°C <br />
+                  <br />
+                  Monday 🌧<br />
+                  10°C - 12°C <br />
+                  <br />
+                  Tuesday ☀<br />
+                  12°C - 14°C<br />
                 </div>
               </div>
-              <div class="col-2">
-                <button type="submit" class="btn btn-secondary">Search</button>
-                <hr />
-                  <button type="click" class="btn btn-primary" id="currentPositionBtn">Current</button>
-              </div>
-              <div class="col-4"></div>
             </div>
-          </form>
+            <h1>
+              19
+              <div class="current-temp" id="temperature">℃</div>
+            </h1>
+            <br />
+            <div class="row">
+              <div class="col-8">
+                <div class="row time">
+                  <div class="col-2">21</div>
+                  <div class="col-2">22</div>
+                  <div class="col-2">23</div>
+                  <div class="col-2">00</div>
+                  <div class="col-2">01</div>
+                  <div class="col-2">02</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8">
+                <div class="row precip">
+                  <div class="col-2">☁</div>
+                  <div class="col-2">🌕</div>
+                  <div class="col-2">🌕</div>
+                  <div class="col-2">☁</div>
+                  <div class="col-2">🌕</div>
+                  <div class="col-2">🌕</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-9">
+                  <hr />
+                </div>
+              </div>
+              <form id="search-form">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter a city"
+                        id="search-text-input"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <button type="submit" class="btn btn-secondary">
+                      Search
+                    </button>
+                    <hr />
+                    <button
+                      type="click"
+                      class="btn btn-primary"
+                      id="currentPositionBtn"
+                    >
+                      Current
+                    </button>
+                  </div>
+                  <div class="col-4"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
-    <p><a href="https://tender-knuth-a08778.netlify.app">Open-source code</a>, by Nathalie Pires</p>
+    <p>
+      <a href="https://tender-knuth-a08778.netlify.app">Open-source code</a>, by
+      Nathalie Pires
+    </p>
   </body>
 </html>
