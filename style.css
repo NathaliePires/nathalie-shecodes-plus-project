@@ -1,5 +1,6 @@
 h1 {
   font-size: 60px;
+  margin-right: 0;
 }
 
 h5 {
@@ -7,13 +8,15 @@ h5 {
 }
 
 p {
+  display: block;
   font-size: 15px;
-  margin: 10px;
+  margin: 10px 45px;
+  max-width: 600px;
 }
 
 #linha-vertical {
   border-right: 1px solid rgb(184, 179, 179);
-  bottom: 90px;
+  bottom: 60px;
   height: 250px;
   position: absolute;
   right: 130px;
@@ -45,5 +48,6 @@ p {
 .current-temp {
   display: inline;
   font-size: 15px;
-  vertical-align: super;
+  position: relative;
+  top: -32px;
 }
