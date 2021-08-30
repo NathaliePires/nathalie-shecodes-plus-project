@@ -39,6 +39,15 @@ function showTemperature(response) {
 
   let h5 = document.querySelector("h5");
   h5.innerHTML = `${city}`;
+
+  let description = document.querySelector("#description");
+  description.innerHTML = response.data.weather[0].description;
+
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = response.data.main.humidity;
+
+  let wind = document.querySelector("#wind");
+  wind.innerHTML = Math.round(response.data.main.wind.speed);
 }
 
 function currentPosition(position) {
