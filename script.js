@@ -34,7 +34,7 @@ function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let city = response.data.name;
 
-  let h1 = document.querySelector("h1");
+  let h1 = document.querySelector("#temperature");
   h1.innerHTML = `${temperature}`;
 
   let h5 = document.querySelector("h5");
@@ -47,12 +47,12 @@ function showTemperature(response) {
   humidity.innerHTML = response.data.main.humidity;
 
   let wind = document.querySelector("#wind");
-  wind.innerHTML = Math.round(response.data.main.wind.speed);
+  wind.innerHTML = Math.round(response.data.wind.speed);
 
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
-    `htpps://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 
   iconElement.setAttribute("alt", response.data.weather[0].description);
