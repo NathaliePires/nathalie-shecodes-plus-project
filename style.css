@@ -65,6 +65,14 @@ li {
 .current-temp {
   display: inline;
   font-size: 15px;
+  left: 60px;
   position: relative;
-  top: -32px;
+  top: -55px;
+}
+
+.icon {
+  display: inline;
+  left: 100px;
+  position: relative;
+  top: -30px;
 }

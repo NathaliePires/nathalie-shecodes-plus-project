@@ -58,6 +58,23 @@ function showTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
+function changeFahr(event) {
+  event.preventDefault();
+  let fahrTemp = document.querySelector("#temperature");
+  fahrTemp.innerHTML = `66°F`;
+}
+let fahrenheitLink = document.querySelector("#fahr-link");
+fahrenheitLink.addEventListener("click", changeFahr);
+
+function changeCelsius(event) {
+  event.preventDefault();
+  let celsiusTemp = document.querySelector("#temperature");
+  celsiusTemp.innerHTML = `19℃`;
+}
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", changeCelsius);
+
 function currentPosition(position) {
   let longitude = position.coords.longitude;
   let latitude = position.coords.latitude;
