@@ -1,10 +1,15 @@
 h1 {
   font-size: 60px;
-  margin-right: 0;
 }
 
 h5 {
   text-transform: capitalize;
+}
+
+h6 {
+  color: rgb(184, 179, 179);
+  font-size: 15px;
+  font-weight: normal;
 }
 
 p {
@@ -33,7 +38,7 @@ li {
 
 #linha-vertical {
   border-right: 1px solid rgb(184, 179, 179);
-  bottom: 60px;
+  bottom: 100px;
   height: 250px;
   position: absolute;
   right: 130px;
@@ -62,10 +67,25 @@ li {
   margin-right: 20px;
 }
 
-.current-temp {
-  display: inline;
+.current-temp .img {
+  height: 40px;
+  float: left;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.current-temp .fahr-celsius {
   font-size: 15px;
-  left: 100px;
-  position: relative;
-  top: -55px;
+  left: 80px;
+  position: absolute;
+  top: 130px;
+}
+
+.current-temp .active {
+  color: #212529;
+  cursor: default;
+}
+
+.current-temp .active:hover {
+  text-decoration: none;
 }
