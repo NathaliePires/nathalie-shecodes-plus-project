@@ -31,6 +31,8 @@ function search(event) {
 }
 
 function showTemperature(response) {
+  celsiusTemperature = response.data.main.temp;
+
   let temperature = Math.round(celsiusTemperature);
   let city = response.data.name;
   let h1 = document.querySelector("#temperature");
@@ -39,8 +41,6 @@ function showTemperature(response) {
   let humidity = document.querySelector("#humidity");
   let wind = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
-
-  celsiusTemperature = response.data.main.temp;
 
   h1.innerHTML = `${temperature}`;
   h5.innerHTML = `${city}`;
