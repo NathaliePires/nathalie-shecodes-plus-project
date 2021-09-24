@@ -36,14 +36,6 @@ li {
   text-transform: capitalize;
 }
 
-#linha-vertical {
-  border-right: 1px solid rgb(184, 179, 179);
-  bottom: 100px;
-  height: 250px;
-  position: absolute;
-  right: 130px;
-}
-
 .card {
   border: 2px solid grey;
 }

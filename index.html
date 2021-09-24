@@ -19,7 +19,6 @@
     <div class="container">
       <div class="card" style="width: 30rem">
         <div class="card-body">
-          <div id="linha-vertical"></div>
           <h5 class="card-title" id="city">Porto Alegre</h5>
           <h6>Last updating: <small></small></h6>
           <ul>
@@ -28,26 +27,6 @@
             <li>Wind: <span id="wind"> </span> km/h</li>
           </ul>
           <div class="clearfix">
-            <div style="float: right">
-              <div class="row">
-                <div class="col days">
-                  Friday ☁<br />
-                  10°C - 12°C <br />
-                  <br />
-                  Saturday ☁<br />
-                  8°C - 12°C <br />
-                  <br />
-                  Sunday ☁<br />
-                  12°C - 14°C <br />
-                  <br />
-                  Monday 🌧<br />
-                  10°C - 12°C <br />
-                  <br />
-                  Tuesday ☀<br />
-                  12°C - 14°C<br />
-                </div>
-              </div>
-            </div>
             <h1>
               <span id="temperature">8</span
               ><small>
@@ -62,19 +41,19 @@
             </h1>
             <br />
             <div class="row">
-              <div class="col-8">
-                <div class="row time">
-                  <div class="col-2">21</div>
-                  <div class="col-2">22</div>
-                  <div class="col-2">23</div>
-                  <div class="col-2">00</div>
-                  <div class="col-2">01</div>
-                  <div class="col-2">02</div>
+              <div class="col-12">
+                <div class="row day">
+                  <div class="col-2">Fri</div>
+                  <div class="col-2">Sat</div>
+                  <div class="col-2">Sun</div>
+                  <div class="col-2">Mon</div>
+                  <div class="col-2">Tue</div>
+                  <div class="col-2">Wed</div>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-8">
+              <div class="col-12">
                 <div class="row precip">
                   <div class="col-2">☁</div>
                   <div class="col-2">🌕</div>
@@ -86,12 +65,13 @@
               </div>
               <div class="row">
                 <div class="col-9">
+                </br>
                   <hr />
                 </div>
               </div>
               <form id="search-form">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-7">
                     <div class="mb-3">
                       <input
                         type="text"
@@ -104,17 +84,16 @@
                   <div class="col-2">
                     <button type="submit" class="btn btn-secondary">
                       Search
-                    </button>
-                    <hr />
+                    </button> </div>
+                    <div class="col-2">
                     <button
                       type="click"
                       class="btn btn-primary"
                       id="currentPositionBtn"
                     >
                       Current
-                    </button>
+                    </button></div>
                   </div>
-                  <div class="col-4"></div>
                 </div>
               </form>
             </div>
