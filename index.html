@@ -19,57 +19,34 @@
     <div class="container">
       <div class="card" style="width: 30rem">
         <div class="card-body">
-          <h5 class="card-title" id="city">Porto Alegre</h5>
-          <h6>Last updating: <small></small></h6>
-          <ul>
-            <li id="description">Sky</li>
-            <li>Humidity: <span id="humidity"> </span>%</li>
+          <div class="overview">
+            <h5 class="card-title" id="city">City</h5>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+              <li>Humidity: <span id="humidity"> </span>%</li>
             <li>Wind: <span id="wind"> </span> km/h</li>
           </ul>
+            </ul>
+          </div>
+    
           <div class="clearfix">
             <h1>
-              <span id="temperature">8</span
+              <img src="" id="icon" class="float-left" />
+              <span id="temperature"></span
               ><small>
                 <div class="current-temp">
                   <div class="fahr-celsius">
                     <a href="#" id="celsius-link" class="active">℃ | </a
                     ><a href="#" id="fahr-link">℉</a>
-                    <img src="" id="icon" class="float-left" />
                   </div>
                 </div>
               </small>
             </h1>
-            <br />
-            <div class="row">
-              <div class="col-12">
-                <div class="row day">
-                  <div class="col-2">Fri</div>
-                  <div class="col-2">Sat</div>
-                  <div class="col-2">Sun</div>
-                  <div class="col-2">Mon</div>
-                  <div class="col-2">Tue</div>
-                  <div class="col-2">Wed</div>
-                </div>
-              </div>
+            <div class="row-forecast" id="forecast"></div>
             </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="row precip">
-                  <div class="col-2">☁</div>
-                  <div class="col-2">🌕</div>
-                  <div class="col-2">🌕</div>
-                  <div class="col-2">☁</div>
-                  <div class="col-2">🌕</div>
-                  <div class="col-2">🌕</div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-9">
-                </br>
-                  <hr />
-                </div>
-              </div>
               <form id="search-form">
+                <hr />
                 <div class="row">
                   <div class="col-7">
                     <div class="mb-3">

@@ -3,13 +3,8 @@ h1 {
 }
 
 h5 {
+  font-size: 40px;
   text-transform: capitalize;
-}
-
-h6 {
-  color: rgb(184, 179, 179);
-  font-size: 15px;
-  font-weight: normal;
 }
 
 p {
@@ -18,18 +13,15 @@ p {
   max-width: 600px;
 }
 
-small {
-  color: rgb(184, 179, 179);
-}
-
 ul {
   margin: 0;
   padding: 0;
+  text-align: right;
 }
 
 li {
   color: rgb(184, 179, 179);
-  font-size: 10px;
+  font-size: 13px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -60,17 +52,16 @@ li {
 }
 
 .current-temp .img {
-  height: 40px;
-  float: left;
-  margin-right: 10px;
-  width: 40px;
+  height: 64px;
+  margin-right: 5px;
+  width: 64px;
 }
 
 .current-temp .fahr-celsius {
   font-size: 15px;
-  left: 80px;
-  position: absolute;
-  top: 130px;
+  left: 175px;
+  position: relative;
+  top: -80px;
 }
 
 .current-temp .active {
@@ -80,4 +71,27 @@ li {
 
 .current-temp .active:hover {
   text-decoration: none;
+}
+
+.row-forecast {
+  color: #000;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.row-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.row-temp-min {
+  opacity: 0.5;
+}
+
+.row-temps {
+  font-size: 13px;
+}
+
+.search-form {
+  text-align: center;
 }
